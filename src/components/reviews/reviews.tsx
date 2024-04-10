@@ -1,5 +1,4 @@
 import styles from './reviews.module.css';
-import Image from 'next/image';
 import cn from 'classnames';
 import REVIEWS from '@/app/content/reviews';
 import ReviewCard, { ReviewCardType } from '../reviewCard/reviewCard';

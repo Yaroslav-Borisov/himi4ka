@@ -1,0 +1,19 @@
+.definition {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0;
+    padding: 35px;
+    border: 1px solid var(--background-color);
+    box-sizing: border-box;
+}
+
+.definition span {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+
+    @media (min-width: 425px) {
+        font-size: 20px;
+    }
+}

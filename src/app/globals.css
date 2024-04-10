@@ -8,15 +8,14 @@
   --font-default-color: #d0d0d2;
   --font-title-color: #ffffff;
   --color-accent: #1AC3B8;
+  --color-error: #e95656;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
   font-family: var(--font);
   font-weight: 500;
-  color: var(--font-default-color);
   line-height: 1.5;
 }
 

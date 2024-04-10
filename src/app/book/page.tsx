@@ -1,16 +1,16 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import Button from '@/components/button/button';
-import Header from '@/components/header/header';
 import cn from 'classnames';
 import PROGRAM_CARDS from '../content/programCards';
 import ProgramCard from '@/components/programCard/programCard';
 import Reviews from '@/components/reviews/reviews';
 import REVIEWS from '../content/reviews';
+import Header from '@/components/header/header';
 
 export default function Book() {
   return (
-    <>
+    <div className={styles.container}>
       <Header />
       <main className={styles.main}>
         <div className={cn(styles.intro, styles.section)}>
@@ -139,6 +139,6 @@ export default function Book() {
       <footer className={styles.footer}>
         <span>© 2015-2024 HIMI4KA.RU</span>
       </footer>
-    </>
+    </div>
   );
 }

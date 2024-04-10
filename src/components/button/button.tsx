@@ -1,12 +1,20 @@
-import styles from './button.module.css';
+'use client';
 
+import cn from 'classnames';
+import styles from './button.module.css';
 interface ButtonProps {
+  className?: string;
   children: React.ReactNode;
+  clickHandler?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-const Button = ({ children }: ButtonProps): JSX.Element => {
+const Button = ({ children, className, clickHandler }: ButtonProps): JSX.Element => {
   return (
-    <button className={styles.button} type="button">
+    <button
+      className={cn(styles.button, className)}
+      onClick={(e) => clickHandler && clickHandler(e)}
+      type="button"
+    >
       {children}
     </button>
   );

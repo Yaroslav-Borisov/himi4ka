@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 20px;
     padding: 20px 30px;
+    background-color: var(--background-color);
     border-bottom: 1px solid var(--border-color);
 
     @media (min-width: 768px) {
@@ -29,7 +30,6 @@
 }
 
 .header__navigationWrapper {
-    /* display: flex; */
     display: contents;
 }
 
